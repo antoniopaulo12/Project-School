@@ -8,7 +8,7 @@
         <sidenav-item
           url="/dashboard-default"
           :class="getRoute() === 'dashboard-default' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'لوحة القيادة' : 'Dashboard'"
+          :navText="this.$store.state.isRTL ? 'لوحة القيادة' : 'Escritorio'"
         >
           <template v-slot:icon>
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
@@ -17,13 +17,13 @@
       </li>
       <li class="nav-item">
         <sidenav-item
-          url="/tables"
-          :class="getRoute() === 'tables' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'الجداول' : 'Tables'"
+          url="/student"
+          :class="getRoute() === 'student' ? 'active' : ''"
+          :navText="this.$store.state.isRTL ? 'Estudiantes' : 'Estudiantes'"
         >
           <template v-slot:icon>
             <i
-              class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"
+              class="ni ni-hat-3 text-warning text-sm opacity-10"
             ></i>
           </template>
         </sidenav-item>
